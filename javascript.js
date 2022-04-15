@@ -16,7 +16,7 @@ function genDivs(){
         alert("Please enter a positive integer")
     }
     else{
-        var e = document.querySelector('.grid-container'); // whatever you want to append the rows to: 
+        var e = document.querySelector('.grid-container'); 
         for(var i = 0; i < v; i++){ 
         var row = document.createElement("div"); 
         row.className = "row"; 
@@ -26,7 +26,6 @@ function genDivs(){
             cell.style.width = "100%";
             let height = 900 / parseInt(v);
             cell.style.height = `${height}px`
-            //   cell.innerText = (i * v) + x;
             row.appendChild(cell); 
         } 
         e.appendChild(row); 

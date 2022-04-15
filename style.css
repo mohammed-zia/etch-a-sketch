@@ -17,8 +17,7 @@ html {
 }
 
 .container {
-    /* display: flex;
-    flex-direction: column; */
+
     width: 900px;
     height: auto;
   }
@@ -34,17 +33,12 @@ html {
     margin-bottom: 1rem;
 }
 
-
   .row {
     display: flex;
-    /* justify-content: center; */
-    /* height: 6%; */
   }
+
   .gridSquare {
     border: #444242 solid 1px;
-    /* margin: auto; */
-    /* height: 100%; */
-    /* width: 33.3%; */
   }
 
   .squareBlack {
@@ -55,7 +49,6 @@ html {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    /* margin: 0 2rem; */
 }
 
 input, .clearButton {
@@ -71,5 +64,4 @@ input, .clearButton {
     outline: none;
     cursor: pointer;
     margin: 1rem;
-    /* min-width: 150px; */
 }
