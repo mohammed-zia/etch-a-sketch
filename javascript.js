@@ -1,14 +1,13 @@
 const gridSquare = document.getElementsByClassName("gridSquare");
-
+let btnDiv = document.querySelector('.btn')
+let clearBtn = document.createElement('button')
+clearBtn.className='clearButton'
+clearBtn.innerText='Clear'
+clearBtn.addEventListener('click', () => {
+    window.location.reload();
+})
+btnDiv.appendChild(clearBtn)
 function genDivs(){ 
-    let btnDiv = document.querySelector('.btn')
-    let clearBtn = document.createElement('button')
-    clearBtn.className='clearButton'
-    clearBtn.innerText='Clear'
-    clearBtn.addEventListener('click', () => {
-        window.location.reload();
-    })
-    btnDiv.appendChild(clearBtn)
     v = prompt("How many rows would you like? (Max 100)")
     if(v <= 100){
         var e = document.querySelector('.grid-container'); // whatever you want to append the rows to: 
