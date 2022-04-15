@@ -9,7 +9,13 @@ clearBtn.addEventListener('click', () => {
 btnDiv.appendChild(clearBtn)
 function genDivs(){ 
     v = prompt("How many rows would you like? (Max 100)")
-    if(v <= 100){
+    if(v > 100){
+        alert("Please enter an integer below 100")
+    }
+    else if(v<0){
+        alert("Please enter a positive integer")
+    }
+    else{
         var e = document.querySelector('.grid-container'); // whatever you want to append the rows to: 
         for(var i = 0; i < v; i++){ 
         var row = document.createElement("div"); 
@@ -30,12 +36,6 @@ function genDivs(){
             gridSquare[i].className += " squareBlack";
             });
         } 
-    }
-    else if(v<0){
-        alert("Please enter a positive integer")
-    }
-    else{
-        alert("Please enter a number up to 100")
     }
 
 }
